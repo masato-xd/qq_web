@@ -1,0 +1,12 @@
+from django.conf.urls import include, url
+from django.contrib import admin
+from home_page import views as home_page_views
+
+urlpatterns = [
+    # Examples:
+    # url(r'^$', 'qqweb.views.home', name='home'),
+    # url(r'^blog/', include('blog.urls')),
+
+    url(r'^$', home_page_views.index),
+    url(r'^admin/', include(admin.site.urls)),
+]
