@@ -9,8 +9,11 @@ from django.http import HttpResponse
 #     return HttpResponse(u"球球大作战工具链接")
 
 def index(request):
-    return render(request, 'home.html')
+    return render(request, 'home_page/home.html')
 
+def zqxt(request):
+    string = u"我在自强学堂学习Django,建网站"
+    return render(request, 'home_page/zqxt.html',{'string': string})
  
 def add(request):
 #    a = request.GET['a']

@@ -8,7 +8,8 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', home_page_views.index),
+    url(r'^zqxt/$', home_page_views.zqxt, name='zqxt'),
     url(r'^add/$', home_page_views.add, name='add'),
-    url(r'^add/(\d+)/(\d+)/$', home_page_views.add2, name='add2'),
+    url(r'^new_add/(\d+)/(\d+)/$', home_page_views.add2, name='add2'),
     url(r'^admin/', include(admin.site.urls)),
 ]
